@@ -202,18 +202,18 @@ int main(int argc, char *argv[])
 void header() 
 {
     cout <<  setw(5) << "H" << setw(5) << "WC" << setw(7) <<
-        "BSA" << setw(5) << "VTC" << setw(12) << "SBSI" << setw(12) 
+        "BSA" << setw(5) << "VTC" << setw(14) << "SBSI" << setw(14) 
         << " Funtion\n";
 
     cout << right <<  "  ---" << setw(5) << "---" << setw(7) <<
-        "-----" << setw(5) << "---" << setw(12) << "---------" << setw(12) 
-        << "----------" << endl;
+        "-----" << setw(5) << "---" << setw(14) << "-----------" << setw(14) 
+        << "------------" << endl;
 
 }
 void output(SBSI *sbsi, double expect, double result, bool oob)
 {
-    cout << setw(5) << sbsi->h << setw(5) << sbsi->wc << setw(7) <<
-        sbsi->bsa << setw(5) << sbsi->vtc << setw(12) << expect << setw(12) 
+    cout << setw(5) << setprecision(9) << sbsi->h << setw(5) << sbsi->wc << setw(7) <<
+        sbsi->bsa << setw(5) << sbsi->vtc << setw(14) << expect << setw(14) 
         << result;
     if (oob) {
         cout << " <---- outside of tolerance\n";
