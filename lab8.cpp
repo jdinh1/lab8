@@ -203,11 +203,11 @@ int main(int argc, char *argv[])
 
 void header() 
 {
-    cout <<  setw(5) << "H" << setw(5) << "WC" << setw(7) <<
+    cout <<  left << setw(5) << "H" << setw(5) << "WC" << setw(7) <<
         "BSA" << setw(5) << "VTC" << setw(14) << "SBSI" << setw(14) 
-        << " Funtion\n";
+        << "Function" << endl;
 
-    cout << right <<  "  ---" << setw(5) << "---" << setw(7) <<
+    cout << left << setw(5) <<  "---" << setw(5) << "---" << setw(7) <<
         "-----" << setw(5) << "---" << setw(14) << "-----------" << setw(14) 
         << "------------" << endl;
 
